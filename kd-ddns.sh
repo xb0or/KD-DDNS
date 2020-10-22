@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
-export PATH
 
-
-kd-ddns(){
     read -p "请输入主域名(eg:example.com) :" zhuyuming
     read -p "请输入子域名(eg:123.example.com 只需填入123) :" ziyuming
     read -p "请输入 cloudflare API :" youkey
@@ -21,4 +17,3 @@ kd-ddns(){
     echo "请使用 crontab -e 添加计划任务"
     echo "*/1 * * * * /usr/local/bin/cf-ddns.sh >/dev/null 2>&1"
     echo 
-}
