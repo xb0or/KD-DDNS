@@ -5,7 +5,7 @@
     read -p "请输入 cloudflare API :" youkey
     read -p "请输入 cloudflare Username:" youuser
     
-    wget https://raw.githubusercontent.com/xb0or/KD-DDNS/main/cf-ddns.sh && chmod +x cf-ddns.sh
+    curl https://raw.githubusercontent.com/xb0or/KD-DDNS/main/cf-ddns.sh > /usr/local/bin/cf-ddns.sh && chmod +x /usr/local/bin/cf-ddns.sh
 	
     sed -i "s/zhuyuming/${zhuyuming}/g" /usr/local/bin/cf-ddns.sh
     sed -i "s/ziyuming/${ziyuming}.${zhuyuming}/g" /usr/local/bin/cf-ddns.sh
