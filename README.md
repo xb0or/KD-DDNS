@@ -17,23 +17,20 @@ curl -L -O -s https://raw.githubusercontent.com/xb0or/KD-DDNS/main/kd-ddns.sh &&
 ### 2.国内服务器(无通知)
 
 
-`请输入主域名(eg:example.com)：`example.com
+#### 请输入主域名(eg:example.com)：example.com
 
-`请输入子域名(eg:123.example.com 只需填入123)：`123
+#### 请输入子域名(eg:123.example.com 只需填入123)：123
 
-`请输入 cloudflare API ：`12345678999999
+#### 请输入 cloudflare API ：12345678999999
+ 在 https://dash.cloudflare.com/profile/api-tokens 中获得Global API Key
 
-```
-在[https://dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)中获得Global API Key
-```
 
-`请输入 cloudflare Username: `123456789@gmail.com
-
+#### 请输入 cloudflare Username: 123456789@gmail.com
 ```
 为账号邮箱
 ```
 
-`请输入TG接收人ID:`123456789
+#### 请输入TG接收人ID:123456789
 
 ```
 1、打开Telegram，在搜索栏搜索    @userinfobot  
@@ -45,9 +42,6 @@ curl -L -O -s https://raw.githubusercontent.com/xb0or/KD-DDNS/main/kd-ddns.sh &&
 `cf-ddns.sh` 如果IP无变化则不运行
 
 `cf-ddns.sh -f true` 为无论IP是否改变强制运行
-
-输入主域名、子域名、API密钥和账户邮箱即可使用
-
 
 # 后期修改 
 一键脚本为一次性 如续修改到 `/usr/local/bin/cf-ddns.sh` 进行手动修改 或者删除此文件再运行一键
