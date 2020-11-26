@@ -17,7 +17,7 @@ curl -L -O -s https://raw.githubusercontent.com/xb0or/KD-DDNS/main/kd-ddns.sh &&
 2.国内服务器(无通知)
 
 
-请输入主域名(eg:example.com)：example.com
+`请输入主域名(eg:example.com)：example.com
 
 请输入子域名(eg:123.example.com 只需填入123)：123
 
@@ -35,6 +35,7 @@ curl -L -O -s https://raw.githubusercontent.com/xb0or/KD-DDNS/main/kd-ddns.sh &&
 ```
 
 `cf-ddns.sh` 如果IP无变化则不运行
+
 `cf-ddns.sh -f true` 为无论IP是否改变强制运行
 
 输入主域名、子域名、API密钥和账户邮箱即可使用
