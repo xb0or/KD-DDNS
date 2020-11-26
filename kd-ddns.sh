@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo && echo -e "欢迎使用kd-ddns
 请选择您的服务器：
-1.国外服务器(有TG通知 @kdddns_bot)
+1.国外服务器(有TG通知)
 2.国内服务器(无通知)" && echo
 	read -e -p "(默认: 取消):" bk_modify
 	[[ -z "${bk_modify}" ]] && echo "已取消..." && exit 1
@@ -11,7 +11,8 @@ echo && echo -e "欢迎使用kd-ddns
                 read -p "请输入子域名(eg:123.example.com 只需填入123) :" ziyuming
                 read -p "请输入 cloudflare API :" youkey
                 read -p "请输入 cloudflare Username:" youuser
-                read -p "请输入TG接收人ID:" tongzhirenid
+                read -p "请输入 TG 机器人Token:" jiqirentoken
+                read -p "请输入 TG 接收人ID:" tongzhirenid
 	elif [[ ${bk_modify} == "2" ]]; then
 		curl https://raw.githubusercontent.com/xb0or/KD-DDNS/main/cf-cn-ddns.sh > /usr/local/bin/cf-ddns.sh && chmod +x /usr/local/bin/cf-ddns.sh
               read -p "请输入主域名(eg:example.com) :" zhuyuming
@@ -26,6 +27,7 @@ echo && echo -e "欢迎使用kd-ddns
     sed -i "s/ziyuming/${ziyuming}.${zhuyuming}/g" /usr/local/bin/cf-ddns.sh
     sed -i "s/youkey/${youkey}/g" /usr/local/bin/cf-ddns.sh
     sed -i "s/youuser/${youuser}/g" /usr/local/bin/cf-ddns.sh
+    sed -i "s/jiqirentoken/${jiqirentoken}/g" /usr/local/bin/cf-ddns.sh
     sed -i "s/tongzhirenid/${tongzhirenid}/g" /usr/local/bin/cf-ddns.sh
     
     cf-ddns.sh
