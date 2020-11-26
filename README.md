@@ -10,22 +10,30 @@ curl -L -O -s https://raw.githubusercontent.com/xb0or/KD-DDNS/main/kd-ddns.sh &&
 ```
 
 # 使用教程
-选择服务器类型
+## 选择服务器类型
 
-1.国外服务器(有TG通知)通知机器人为：@kdddns_bot （也可以在此 https://github.com/xb0or/KD-DDNS/blob/9f674fb5353dd03d3dd5fff2372fbfd40ee1c1fb/cf-ddns.sh#L141 修改为自己的机器人密钥）
+### 1.国外服务器(有TG通知)通知机器人为：@kdddns_bot （也可以在此 https://github.com/xb0or/KD-DDNS/blob/9f674fb5353dd03d3dd5fff2372fbfd40ee1c1fb/cf-ddns.sh#L141 修改为自己的机器人密钥）
 
-2.国内服务器(无通知)
+### 2.国内服务器(无通知)
 
 
-`请输入主域名(eg:example.com)：example.com
+`请输入主域名(eg:example.com)：`example.com
 
-请输入子域名(eg:123.example.com 只需填入123)：123
+`请输入子域名(eg:123.example.com 只需填入123)：`123
 
-请输入 cloudflare API ：在[https://dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)中获得Global API Key
+`请输入 cloudflare API ：`12345678999999
 
-请输入 cloudflare Username: 为账号邮箱
+```
+在[https://dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)中获得Global API Key
+```
 
-请输入TG接收人ID:123456789
+`请输入 cloudflare Username: `123456789@gmail.com
+
+```
+为账号邮箱
+```
+
+`请输入TG接收人ID:`123456789
 
 ```
 1、打开Telegram，在搜索栏搜索    @userinfobot  
