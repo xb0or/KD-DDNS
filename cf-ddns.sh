@@ -154,6 +154,7 @@ URL="https://api.telegram.org/bot${TOKEN}/sendMessage"
 if [ "$RESPONSE" != "${RESPONSE%success*}" ] && [ "$(echo $RESPONSE | grep "\"success\":true")" != "" ]; then
   echo "更新成功！"
   echo $WAN_IP > $WAN_IP_FILE
+  curl -s -o /dev/null -X POST $URL -d chat_id=${chat_ID} -d text="${message_text}" 
   exit
 else
   echo '更新失败了请看下面报错：'
