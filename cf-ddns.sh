@@ -137,6 +137,20 @@ RESPONSE=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$CFZONE_ID
   -H "Content-Type: application/json" \
   --data "{\"id\":\"$CFZONE_ID\",\"type\":\"$CFRECORD_TYPE\",\"name\":\"$CFRECORD_NAME\",\"content\":\"$WAN_IP\", \"ttl\":$CFTTL}")
 
+#TG机器人通知
+TOKEN=1385280189:AAHGgP4XS7VcMEWnn9mK8v460MKC3TVe_9A #机器人密钥
+chat_ID=tongzhirenid   #通知人ID
+message_text="
+⚠️主人IP变动了
+——————————————— 
+域名:【$CFRECORD_NAME】
+新IP:$WAN_IP
+旧IP:$OLD_WAN_IP
+——————————————— "   #通知内容
+MODE='HTML' 
+URL="https://api.telegram.org/bot${TOKEN}/sendMessage"
+
+
 if [ "$RESPONSE" != "${RESPONSE%success*}" ] && [ "$(echo $RESPONSE | grep "\"success\":true")" != "" ]; then
   echo "更新成功！"
   echo $WAN_IP > $WAN_IP_FILE
