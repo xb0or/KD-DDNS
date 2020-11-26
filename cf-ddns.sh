@@ -138,7 +138,7 @@ RESPONSE=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$CFZONE_ID
   --data "{\"id\":\"$CFZONE_ID\",\"type\":\"$CFRECORD_TYPE\",\"name\":\"$CFRECORD_NAME\",\"content\":\"$WAN_IP\", \"ttl\":$CFTTL}")
 
 #TG机器人通知
-TOKEN=1385280189:AAHGgP4XS7VcMEWnn9mK8v460MKC3TVe_9A #机器人密钥
+TOKEN=jiqirentoken #机器人密钥
 chat_ID=tongzhirenid   #通知人ID
 message_text="
 ⚠️主人IP变动了
