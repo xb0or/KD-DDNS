@@ -12,7 +12,7 @@ curl -L -O -s https://raw.githubusercontent.com/xb0or/KD-DDNS/main/kd-ddns.sh &&
 # 使用教程
 ## 选择服务器类型
 
-### 1.国外服务器(有TG通知)通知机器人为：@kdddns_bot （也可以在此 https://github.com/xb0or/KD-DDNS/blob/9f674fb5353dd03d3dd5fff2372fbfd40ee1c1fb/cf-ddns.sh#L141 修改为自己的机器人密钥）
+### 1.国外服务器(有TG通知）
 
 ### 2.国内服务器(无通知)
 
@@ -29,6 +29,9 @@ curl -L -O -s https://raw.githubusercontent.com/xb0or/KD-DDNS/main/kd-ddns.sh &&
 ```
 为账号邮箱
 ```
+#### 请输入TG机器人token：123456:abcderg
+
+在此机器人创建@BotFather
 
 #### 请输入TG接收人ID:123456789
 
