@@ -1,3 +1,18 @@
+# 关于DEV 的一些想法
+## 目前是想加上国内服务器的TG机器人通知以及服务器存活提醒（ping/port）
+### 国内服务器的TG机器人通知
+实现方法为：用国外服务器进行解析国内服务器的DDNS域名，当解析到的和原来记录的不一致时进行TG通知
+### 服务器存活提醒（ping/port）
+没思路
+
+
+
+
+
+
+
+
+
 # 通过此项目修改
 ## [https://github.com/yulewang/cloudflare-api-v4-ddns](https://github.com/yulewang/cloudflare-api-v4-ddns)
 
